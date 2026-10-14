@@ -11,7 +11,8 @@ public class MainMaträtt {
         meny.add(new Maträtt("Halloumisallad", 110.0, "Vegetarisk", 550));
 
         System.out.println(" Dagens Lunchmenu; ");
-
-        System.out.println(matratt.getNamn() + " (" + matratt.getKostval() + ") - " + matratt.getPris() + " kr (" + matratt.getAntalKalorier() + " kalorier)");
+        for (Maträtt maträtt : meny){
+        System.out.println(maträtt.getNamn() + " (" + maträtt.getKostval() + ") - " + maträtt.getPris() + " kr (" + maträtt.getAntalKalorier() + " kalorier)");
     }
-}
+        }
+    }
